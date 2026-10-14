@@ -15,7 +15,13 @@ public class Greetings extends JPanel {
    }
 	
    public void paintComponent (Graphics g) {
-      g.drawString ("Hi there!", 150, 200);	
-      g.drawRect(125, 170, 100, 50);
+      int w = this.getSize().width/2;
+      int h = this.getSize().height/2;
+      g.drawString ("Hi there!", w, h);	
+      g.drawRect(w-4, h-20, 59, 20);
+      g.drawRect(w-2, h-23, 90, 290);
+      g.drawRect(w-98, h-23, 100, 290);
    }
+
+
 }
